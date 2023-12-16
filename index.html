@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rgistration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="established">
+    <form action="">
+    
+        <!-- This is a header section -->
+        <section>
+        <header>
+    <h1>Registration Form</h1>
+    <p>Please fill out this form with the required information</p>
+</header>
+     <!-- header section is end -->
+    </section>
+    
+     <!-- This section is about introduction -->
+     <section >
+<fieldset>
+    <label for="first-name">Enter Your First Name:
+<input type="text" required id="first-name" name="first-name"></label>
+<label for="last-name">Enter Your Last Name:
+<input type="text" id="last-name" required name="last-name"></label>
+<label for="email">Enter Your Email:
+<input type="email" id="email" required name="email"></label>
+<label for="password">Enter Your password:
+<input type="password" id="password" required name="password" pattern="[a-z0-5]
+{8,}"></label>
+<!-- introduction section is end -->
+</section>
+<section>
+   <!-- This section is about Accounts -->
+</fieldset>
+<fieldset>
+    <label for="Personal_Account">
+<input type="radio" name="account-type" class="inline" id="Personal_Account"> Personal Account</label>
+<label for="Business_Account">
+<input type="radio" name="account-type" class="inline" id="Business_Account">Business Account</label>
+<label for="terms_and_conditions"> 
+<input type="checkbox" class="inline" name="terms-and-conditions" id="terms_and_conditions">I accept the <a href="">terms and conditions</a></label>
+    <!-- The account section is end -->
+</section>
+<section>
+    <!-- This section is about profile -->
+</fieldset>
+    <fieldset>
+    <label for="">Upload a profile picture:</label>
+    <input type="file" required >
+    <label for="">Input your age (years):</label>
+    <input type="number" id="year" name="year" required min="13" max="120">
+    <label for="dropdown">How did you hear about us?
+    <select name="dropdown" id="dropdown">
+        <option value="1">(select one)</option>
+        <option value="2">freeCodeCamp News</option>
+        <option value="3">freeCodeCamp YouTube Channel</option>
+        <option value="4">freeCodeCamp Form</option>
+        <option value="5">ohter</option>
+    </select>
+
+</label>
+    <label for="bio">Provide a bio:
+    <textarea name="bio" id="bio" cols="15" rows="3">i like coding on the beach ...</textarea>
+</label>
+    <!-- The Profile section is end -->
+</label>
+</fieldset>
+</section>
+<fieldset>
+    <input class="submit" type="submit" value="submit">
+</fieldset>
+</div>
+</form>
+</body>
+</html>                       
